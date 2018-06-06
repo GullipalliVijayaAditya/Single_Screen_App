@@ -1,106 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/main1" />
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal"
-      android:weightSum="2" >
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Join Us"
-          android:padding="35dp"/>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-      <HorizontalScrollView
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:scrollbars="none"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main2" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main3" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main4" />
 
-          tools:context=".MainActivity">
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:orientation="horizontal"
-          android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main1" />
 
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/a"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/b"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
 
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/c"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/d"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:padding="35dp"
+                android:text="Join Us " />
 
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/e"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="6dp"
+                android:background="@android:color/darker_gray" />
 
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/f"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
+            <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
 
-          <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:src="@drawable/g"
-              android:layout_marginHorizontal="5dp"
-              app:civ_border_color="#FF000000"
-              app:civ_border_width="2dp" />
+                tools:context=".MainActivity">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/a"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/b"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/c"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/d"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/e"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/f"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/g"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_map_black_24dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:autoLink="map"
+            android:text="  2000 Pennsylvania Ave, NW Washington"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:autoLink="phone"
+            android:textColor="#000000"
+            android:text="  240-654-6972"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:autoLink="email"
+            android:ellipsize="end"
+            android:textColor="#000000"
+            android:text="  nfo@spagnvola.com"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_domain_black_24dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:maxLines="2"
+            android:autoLink="web"
+            android:ellipsize="end"
+            android:text="  www.spagnvola.com"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:maxLines="2"
+            android:autoLink="web"
+            android:ellipsize="end"
+            android:text="  Mon. – Thurs: 11 am to 7 pm"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:text="  Fri. – Sat.: 11 am to 7 pm"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:text="  Sun.: 11 am to 7 pm"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:text="Since 2009, the SPAGnVOLA brand has been changing the world of chocolate. SPAGnVOLA brings you a superior and exquisite taste -- an experience like no other.  We use only the finest cacao beans harvested from our farm on the mountain slopes of the eastern part of the Dominican Republic. Our chocolates are handcrafted in small batches, bringing out the aroma and savor of the most exquisite premium chocolate."/>
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0" />
 
 
 
-      </LinearLayout>
-      </HorizontalScrollView>
+        <TextView
+            android:id="@+id/tvRatingScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Your Rating !"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Tell us what you loved"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#e57373"
+            android:text="Send feedback"
+            android:textColor="@android:color/white" />
 
-  </LinearLayout>
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery1"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery2"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery3"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery4"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery5"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery6"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery7"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery8"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/gallery9"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
 </ScrollView>
+
 
