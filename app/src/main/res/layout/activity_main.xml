@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="5dp"
         android:orientation="vertical">
 
         <HorizontalScrollView
@@ -51,18 +52,18 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="6dp"
+                android:background="@android:color/darker_gray" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00ffffff"
                 android:padding="35dp"
                 android:text="Join Us " />
-
-            <TextView
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="6dp"
-                android:background="@android:color/darker_gray" />
 
             <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -147,6 +148,12 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="6dp"
+                android:background="@android:color/darker_gray" />
+
         </LinearLayout>
 
         <TextView
@@ -191,6 +198,11 @@
             android:ellipsize="end"
             android:text="  www.spagnvola.com"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="6dp"
+            android:background="@android:color/darker_gray" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -226,21 +238,37 @@
             android:text="  Sun.: 11 am to 7 pm"
             />
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="6dp"
+            android:background="@android:color/darker_gray" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About Us:"/>
+            android:text="About Us:"
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="10"
+            android:textColor="#000"
             android:text="Since 2009, the SPAGnVOLA brand has been changing the world of chocolate. SPAGnVOLA brings you a superior and exquisite taste -- an experience like no other.  We use only the finest cacao beans harvested from our farm on the mountain slopes of the eastern part of the Dominican Republic. Our chocolates are handcrafted in small batches, bringing out the aroma and savor of the most exquisite premium chocolate."/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="6dp"
+            android:background="@android:color/darker_gray" />
 
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:numStars="5"
             android:stepSize="1.0" />
@@ -269,14 +297,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="#e57373"
+            android:background="#2491df"
             android:text="Send feedback"
             android:textColor="@android:color/white" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="6dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gallery"/>
+            android:text="Gallery"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
