@@ -1,387 +1,418 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/match_parent"
+    android:layout_height="@dimen/match_parent"
     android:scrollbars="none"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp"
+        android:layout_width="@dimen/match_parent"
+        android:layout_height="@dimen/wrap_content"
+        android:layout_margin="@dimen/fivedp"
         android:orientation="vertical">
 
         <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content">
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/wrap_content"
+                android:layout_height="@dimen/match_parent"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/wrap_content"
+                    android:layout_height="@dimen/wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/main2" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
-                android:src="@drawable/main3" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
-                android:src="@drawable/main4" />
+                    android:src="@drawable/main2"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/wrap_content"
+                    android:layout_height="@dimen/wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/main1" />
+                    android:src="@drawable/main3"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/wrap_content"
+                    android:layout_height="@dimen/wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main4"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/wrap_content"
+                    android:layout_height="@dimen/wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main1"
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
         </HorizontalScrollView>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <TextView
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="6dp"
+                android:layout_width="@dimen/onedp"
+                android:layout_height="@dimen/match_parent"
+                android:layout_marginLeft="@dimen/sixdp"
+                android:layout_marginRight="@dimen/sixdp"
                 android:background="@android:color/darker_gray" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00ffffff"
-                android:padding="35dp"
-                android:text="Join Us " />
+                android:layout_width="@dimen/wrap_content"
+                android:layout_height="@dimen/wrap_content"
+                android:background="@android:color/background_light"
+                android:padding="@dimen/thirtyfivedp"
+                android:text="@string/JoinUs"
+                android:textColor="@color/textcolor" />
 
             <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/match_parent"
                 android:scrollbars="none"
-
                 tools:context=".MainActivity">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="@dimen/wrap_content"
+                    android:layout_height="@dimen/match_parent"
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/a"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/b"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/c"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
-
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/d"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
-
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/e"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/f"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
-
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:elevation="5dp"
+                        android:layout_width="@dimen/eightydp"
+                        android:layout_height="@dimen/wrap_content"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:layout_marginTop="@dimen/fivedp"
+                        android:elevation="@dimen/fivedp"
                         android:src="@drawable/g"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_color="@color/bluecolor"
+                        app:civ_border_width="@dimen/twodp" />
 
 
                 </LinearLayout>
             </HorizontalScrollView>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/match_parent"
                 android:layout_height="1dp"
-                android:layout_marginVertical="6dp"
+                android:layout_marginLeft="@dimen/sixdp"
+                android:layout_marginRight="@dimen/sixdp"
                 android:background="@android:color/darker_gray" />
 
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_map_black_24dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="#000000"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:autoLink="map"
-            android:text="  2000 Pennsylvania Ave, NW Washington"
-            android:textSize="15sp" />
+            android:drawableStart="@drawable/ic_map_black_24dp"
+            android:maxLines="1"
+            android:text="@string/address"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
-            android:textSize="15sp"
-            android:maxLines="2"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:autoLink="phone"
-            android:textColor="#000000"
-            android:text="  240-654-6972"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:textSize="15sp"
+            android:drawableStart="@drawable/ic_local_phone_black_24dp"
             android:maxLines="2"
+            android:text="@string/phone"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
+
+        <TextView
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:autoLink="email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
             android:ellipsize="end"
-            android:textColor="#000000"
-            android:text="  nfo@spagnvola.com"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_domain_black_24dp"
-            android:textSize="15sp"
-            android:textColor="#000000"
             android:maxLines="2"
-            android:autoLink="web"
-            android:ellipsize="end"
-            android:text="  www.spagnvola.com"
-            />
+            android:text="@string/email"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
+            android:autoLink="web"
+            android:drawableStart="@drawable/ic_domain_black_24dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/website"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
+
+        <TextView
+            android:layout_width="@dimen/match_parent"
             android:layout_height="1dp"
-            android:layout_marginVertical="6dp"
+            android:layout_marginBottom="@dimen/sixdp"
+            android:layout_marginTop="@dimen/sixdp"
             android:background="@android:color/darker_gray" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_access_time_black_24dp"
-            android:textSize="15sp"
-            android:textColor="#000000"
-            android:maxLines="2"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:autoLink="web"
+            android:drawableStart="@drawable/ic_access_time_black_24dp"
             android:ellipsize="end"
-            android:text="  Mon. – Thurs: 11 am to 7 pm"
-
-            />
+            android:maxLines="2"
+            android:text="@string/time1"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_access_time_black_24dp"
-            android:textSize="15sp"
-            android:textColor="#000000"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
+            android:drawableStart="@drawable/ic_access_time_black_24dp"
             android:maxLines="1"
-            android:text="  Fri. – Sat.: 11 am to 7 pm"
-
-            />
+            android:text="@string/time2"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_access_time_black_24dp"
-            android:textSize="15sp"
-            android:textColor="#000000"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
+            android:drawableStart="@drawable/ic_access_time_black_24dp"
             android:maxLines="1"
-            android:text="  Sun.: 11 am to 7 pm"
-            />
+            android:text="@string/time3"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/fifteensp" />
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginVertical="6dp"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_marginBottom="@dimen/sixdp"
+            android:layout_marginTop="@dimen/sixdp"
             android:background="@android:color/darker_gray" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About Us:"
-            android:textSize="20dp"
-            android:textColor="#000"
-            />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
+            android:text="@string/aboutus"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twentysp" />
+
+        <TextView
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:maxLines="10"
-            android:textColor="#000"
-            android:text="Since 2009, the SPAGnVOLA brand has been changing the world of chocolate. SPAGnVOLA brings you a superior and exquisite taste -- an experience like no other.  We use only the finest cacao beans harvested from our farm on the mountain slopes of the eastern part of the Dominican Republic. Our chocolates are handcrafted in small batches, bringing out the aroma and savor of the most exquisite premium chocolate."/>
+            android:text="@string/aboutus_text"
+            android:textColor="@color/textcolor" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginVertical="6dp"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_marginLeft="@dimen/sixdp"
+            android:layout_marginRight="@dimen/sixdp"
             android:background="@android:color/darker_gray" />
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:layout_gravity="center"
-            android:layout_height="wrap_content"
             android:numStars="5"
             android:stepSize="1.0" />
 
 
-
         <TextView
             android:id="@+id/tvRatingScale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="Your Rating !"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/tendp"
+            android:text="@string/yourarting"
+            android:textSize="@dimen/fifteensp"
             android:textStyle="bold" />
+
         <EditText
             android:id="@+id/etFeedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/wrap_content"
             android:gravity="top"
-            android:hint="Tell us what you loved"
+            android:hint="@string/telluswhatyouloved"
             android:inputType="textMultiLine"
             android:lines="5" />
+
         <Button
             android:id="@+id/btnSubmit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#2491df"
-            android:text="Send feedback"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/wrap_content"
+            android:layout_marginTop="@dimen/tendp"
+            android:background="@color/bluecolor"
+            android:text="@string/sendfeedback"
             android:textColor="@android:color/white" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginVertical="6dp"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_marginBottom="@dimen/sixdp"
+            android:layout_marginTop="@dimen/sixdp"
             android:background="@android:color/darker_gray" />
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gallery"
-            android:textColor="#000"
-            android:textSize="20sp"/>
-
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
+            android:text="@string/gallery"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twentysp" />
 
         <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery1"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery2"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery3"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery4"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery5"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery6"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery7"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery8"
-                android:scaleType="centerCrop"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/gallery9"
-                android:scaleType="centerCrop"/>
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/match_parent">
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/wrap_content"
+                android:layout_height="@dimen/match_parent"
+                android:orientation="horizontal" >
 
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery1"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery2"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery3"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery4"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery5"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery6"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery7"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery8"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/twohundreddp"
+                    android:layout_height="@dimen/twohundreddp"
+                    android:layout_margin="@dimen/tendp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery9"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
         </HorizontalScrollView>
-
     </LinearLayout>
 </ScrollView>
 

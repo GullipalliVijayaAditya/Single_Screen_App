@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Single Screen App</string>
+    <string name="JoinUs">Join Us</string>
+    <string name="address">2000 Pennsylvania Ave, NW Washington</string>
+    <string name="phone">240-654-6972</string>
+    <string name="email">nfo@spagnvola.com</string>
+    <string name="website">www.spagnvola.com</string>
+    <string name="time1">Mon. – Thurs: 11 am to 7 pm</string>
+    <string name="time2">Fri. – Sat.: 11 am to 7 pm</string>
+    <string name="time3">Sun.: 11 am to 7 pm</string>
+    <string name="gallery">Gallery</string>
+    <string name="yourarting">Your Rating !</string>
+    <string name="telluswhatyouloved">Tell us what you loved</string>
+    <string name="aboutus">About Us:</string>
+    <string name="sendfeedback">Send feedback</string>
+    <string name="aboutus_text">Since 2009, the SPAGnVOLA brand has been changing the world of chocolate. SPAGnVOLA brings you a superior and exquisite taste -- an experience like no other.  We use only the finest cacao beans harvested from our farm on the mountain slopes of the eastern part of the Dominican Republic. Our chocolates are handcrafted in small batches, bringing out the aroma and savor of the most exquisite premium chocolate.</string>
 </resources>
