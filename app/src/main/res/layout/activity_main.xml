@@ -20,38 +20,38 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_margin="@dimen/twodp" >
+                android:layout_margin="@dimen/twodp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/twodp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/main2"
-                    android:layout_margin="@dimen/twodp"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
                     android:layout_margin="@dimen/twodp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/main3"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/twodp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/main4"
-                    android:layout_margin="@dimen/twodp"
                     tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
                     android:layout_margin="@dimen/twodp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/main1"
                     tools:ignore="ContentDescription" />
 
@@ -68,21 +68,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/thirtyfivedp"
                 android:layout_marginStart="@dimen/twodp"
+                android:padding="@dimen/thirtyfivedp"
                 android:text="@string/JoinUs"
                 android:textColor="@color/textcolor" />
 
             <TextView
                 android:layout_width="@dimen/onedp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/sixdp"
                 android:layout_marginBottom="@dimen/sixdp"
+                android:layout_marginTop="@dimen/sixdp"
                 android:background="@android:color/darker_gray" />
 
 
-            <HorizontalScrollView
-                xmlns:android="http://schemas.android.com/apk/res/android"
+            <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -175,10 +174,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fivedp"
             android:autoLink="map"
             android:drawableStart="@drawable/ic_map_black_24dp"
             android:maxLines="1"
-            android:layout_marginStart="@dimen/fivedp"
             android:text="@string/address"
             android:textColor="@color/textcolor"
             android:textSize="@dimen/fifteensp" />
@@ -186,8 +185,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autoLink="phone"
             android:layout_marginStart="@dimen/fivedp"
+            android:autoLink="phone"
             android:drawableStart="@drawable/ic_local_phone_black_24dp"
             android:maxLines="2"
             android:text="@string/phone"
@@ -197,8 +196,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autoLink="email"
             android:layout_marginStart="@dimen/fivedp"
+            android:autoLink="email"
             android:drawableStart="@drawable/ic_email_black_24dp"
             android:ellipsize="end"
             android:maxLines="2"
@@ -209,10 +208,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fivedp"
             android:autoLink="web"
             android:drawableStart="@drawable/ic_domain_black_24dp"
             android:ellipsize="end"
-            android:layout_marginStart="@dimen/fivedp"
             android:maxLines="2"
             android:text="@string/website"
             android:textColor="@color/textcolor"
@@ -227,10 +226,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fivedp"
             android:autoLink="web"
             android:drawableStart="@drawable/ic_access_time_black_24dp"
             android:ellipsize="end"
-            android:layout_marginStart="@dimen/fivedp"
             android:maxLines="2"
             android:text="@string/time1"
             android:textColor="@color/textcolor"
@@ -239,9 +238,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fivedp"
             android:drawableStart="@drawable/ic_access_time_black_24dp"
             android:maxLines="1"
-            android:layout_marginStart="@dimen/fivedp"
             android:text="@string/time2"
             android:textColor="@color/textcolor"
             android:textSize="@dimen/fifteensp" />
@@ -249,9 +248,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fivedp"
             android:drawableStart="@drawable/ic_access_time_black_24dp"
             android:maxLines="1"
-            android:layout_marginStart="@dimen/fivedp"
             android:text="@string/time3"
             android:textColor="@color/textcolor"
             android:textSize="@dimen/fifteensp" />
@@ -266,18 +265,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/aboutus"
-            android:textStyle="bold"
-            android:textColor="@color/textcolor"
             android:layout_margin="@dimen/fivedp"
-            android:textSize="@dimen/twentysp" />
+            android:text="@string/aboutus"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/twentysp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fivedp"
             android:maxLines="10"
             android:text="@string/aboutus_text"
-            android:layout_margin="@dimen/fivedp"
             android:textColor="@color/textcolor" />
 
         <TextView
@@ -309,8 +308,8 @@
             android:id="@+id/etFeedback"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="top"
             android:layout_margin="@dimen/tendp"
+            android:gravity="top"
             android:hint="@string/telluswhatyouloved"
             android:inputType="textMultiLine"
             android:lines="5" />
@@ -334,11 +333,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gallery"
-            android:textStyle="bold"
             android:layout_margin="@dimen/sixdp"
+            android:text="@string/gallery"
             android:textColor="@color/textcolor"
-            android:textSize="@dimen/twentysp" />
+            android:textSize="@dimen/twentysp"
+            android:textStyle="bold" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -347,8 +346,8 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_margin="@dimen/fivedp">
+                android:layout_margin="@dimen/fivedp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="@dimen/twohundreddp"
